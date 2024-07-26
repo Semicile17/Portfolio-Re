@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: 'Press Start 2P';
-  src: url('./src/assets/fonts/PressStart2P-vaV7.ttf') format('truetype');
+  src: url('/fonts/PressStart2P-vaV7.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
