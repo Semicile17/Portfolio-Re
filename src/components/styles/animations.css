@@ -1,0 +1,79 @@
+/* src/styles/animations.css */
+
+@keyframes pixel-combine {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes pixel-decombine {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(0);
+      opacity: 0;
+    }
+  }
+  
+  .pixel-dialog {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  .dialog-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 150px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 8px;
+    border-color: white;
+    border-style: solid;
+    text-align: center;
+    border-width: 1px;
+    padding: 20px;
+    animation: pixel-combine 1s ease-out forwards;
+  }
+  
+  .dialog-content h2 {
+    margin-bottom: 20px;
+    margin-top:5px;
+  }
+
+  .dialog-content .close-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #7CFC00;
+    cursor: pointer;
+  }
+  
+  
+  .dialog-content .close-btn {
+    background-color: #7CFC00;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .pixel-exit {
+    animation: pixel-decombine 0.8s ease-in forwards;
+  }
+  
