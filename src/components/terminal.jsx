@@ -42,11 +42,13 @@ function Terminal() {
 
   return (
    <>
-    <div className="terminal-container flex flex-col">
-    <img src={terminal_logo} alt="terminal" className='h-16 pb-3'/>
+   <div className='flex flex-col w-full h-screen justify-center items-center'>
+   <img src={terminal_logo} alt="terminal" className='h-16 p-3'/>
      <h1 className='pb-4 font-arcade font-bold text-2xl text-secondary'>The Terminal</h1>
      <p className='font-Code text-primary pb-2 opacity-60'>press 'esc' to return home</p>
-      <div className="terminal hover:border-secondary">
+    <div className="terminal-container flex flex-col">
+   
+      <div className="mt-16 terminal hover:border-secondary">
         <div className="terminal-screen">
           {lines.map((line, index) => (
             <div key={index} className={`line ${line.type}`}>
@@ -68,6 +70,7 @@ function Terminal() {
           </form>
         </div>
       </div>
+    </div>
     </div>
     </>
   );

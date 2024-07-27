@@ -3,14 +3,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 100vh;
     background:transparent;
   }
   
   .terminal {
     width: 80%;
     max-width: 800px;
-    height: 70vh;
+    height: 60vh;
     background: #000;
     color: #0f0;
     font-family: 'Source Code Pro', monospace;
