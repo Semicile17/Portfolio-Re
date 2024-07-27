@@ -6,7 +6,7 @@ export default function Footer() {
         <div className="md:flex md:justify-between">
           <div className="mb-6 md:mb-0">
             <a
-              href="https://flowbite.com/"
+              href="/"
               className="flex items-center space-x-1 rtl:space-x-reverse"
             >
               <img src={logo} alt="logo" className="h-7" />

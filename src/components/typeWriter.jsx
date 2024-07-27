@@ -26,7 +26,7 @@ const Typewriter = ({ words }) => {
         if (j === currentWord.length) {
           setTimeout(() => {
             setIsDeleting(true);
-          }, 1000);
+          }, 800);
         }
       }
 
@@ -42,9 +42,9 @@ const Typewriter = ({ words }) => {
   }, [i, j, isDeleting, isComplete, words]);
 
   return (
-    <div className="p-2  flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center">
 
-      <h1 className="text-2xl font-arcade text-primary">
+      <h1 className="text-2xl text-center font-arcade text-primary">
         {currentText}
       </h1>
     </div>

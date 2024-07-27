@@ -4,15 +4,15 @@ import Typewriter from "../components/typeWriter"; // Assuming you'll create thi
 
 function Home() {
   return (
-    <div id="home" className="section">
+    <div id="home" className="mt-20">
       <div className="home-container flex flex-wrap justify-between p-4">
-        <div className=" p-20 w-full md:w-1/2 flex items-center justify-center">
+        <div className="pt-10 w-full md:w-1/2 flex items-center justify-center">
           <Typewriter
             words={[
               "           ",
               "Hello World",
               "Welcome to my website",
-              "I am Rohit Mahant . A Full Stack Web Developer",
+              "I am Rohit Mahant  A Full Stack Web Developer",
             ]}
           />
         </div>

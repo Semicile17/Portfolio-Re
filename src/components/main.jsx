@@ -10,6 +10,7 @@ import Contact from "../pages/contact";
 import Projects from "../pages/projects";
 import Home from "../pages/home";
 import About from "../pages/about";
+import CRT from "./crt";
 
 function Main() {
     const [showOverlay, setShowOverlay] = useState(true);
@@ -18,10 +19,10 @@ function Main() {
      {showOverlay && <Overlay onClose={() => setShowOverlay(false)} />}
       <Navbar />
       <div className="sections-container">
-        <Home />
-        <About/>
+  <Home/>
+      <About/>
         <Projects />
-        <Contact />
+        <Contact /> 
       </div>
       <Footer/>
     </div>

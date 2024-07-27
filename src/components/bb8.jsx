@@ -1,9 +1,14 @@
-import './styles/bb8.less'
-export default function BB8(){
-    return(
-        <div className="centerWrap">
-		<div className="bb8"></div>
-		<span className="quote">"Beeep boop beep beep boop beeeeeep"</span>
-	</div>
-    )
+import "./styles/bb8.css";
+export default function BB8() {
+  return (
+    <div id="loader">
+      <div className="ls-particles ls-part-1"></div>
+      <div className="ls-particles ls-part-2"></div>
+      <div className="ls-particles ls-part-3"></div>
+      <div className="ls-particles ls-part-4"></div>
+      <div className="ls-particles ls-part-5"></div>
+      <div className="lightsaber ls-left ls-green"></div>
+      <div className="lightsaber ls-right ls-red"></div>
+    </div>
+  );
 }
