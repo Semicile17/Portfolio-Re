@@ -1,0 +1,44 @@
+/* styles/backToTheFuture.css */
+
+@keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0.4; }
+    100% { opacity:1; }
+  }
+  
+  @-o-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0.4; }
+    100% { opacity:1; }
+  }
+  
+  @-moz-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0.4; }
+    100% { opacity:1; }
+  }
+  
+  @-webkit-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0.4; }
+    100% { opacity:1; }
+  }
+  
+  .back-to-the-future-text {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 18px;
+    color: #00ff00;
+    text-align: center;
+    animation: flickerAnimation 1s infinite;
+    white-space: pre-line; /* To support multi-line text */
+  }
+  
+  .back-to-the-future-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: black;
+  }
+  
