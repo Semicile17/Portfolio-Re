@@ -32,7 +32,7 @@ export default function Contact() {
       const body =
         "Thanks for connecting. Looking forward to hearing from you soon.";
       const email = Sender.email;
-      const response = await axios.post(`${backend}/api/v1/mails`, {
+      const response = await axios.post(`${backend}api/v1/mails`, {
         title,
         body,
         email,
